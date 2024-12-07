@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>&lt;no title&gt; &#8212; Materi Mathdiskrit</title>
+    <title>Teorema Bayes &#8212; Materi Mathdiskrit</title>
   
   
   
@@ -62,11 +62,10 @@
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'Himpunan';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Teorema Bayes';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Logika Matematika" href="Logika%20dan%20Pembuktian.html" />
-    <link rel="prev" title="Welcome Kamaliyyatul Bararah note’s" href="intro.html" />
+    <link rel="prev" title="Deretan" href="Deret%20dan%20Rekursi.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -170,7 +169,7 @@
                 </a>
             </li>
         </ul>
-        <ul class="nav bd-sidenav">
+        <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="Logika%20dan%20Pembuktian.html">Logika Matematika</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Algoritma.html">Algoritma</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Deret%20dan%20Rekursi.html">Deretan</a></li>
@@ -178,7 +177,7 @@
 
 
 
-<li class="toctree-l1"><a class="reference internal" href="Teorema%20Bayes.html">Teorema Bayes</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Teorema Bayes</a></li>
 </ul>
 
     </div>
@@ -250,7 +249,7 @@
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FHimpunan.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FTeorema Bayes.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -280,7 +279,7 @@
       
       
       
-      <li><a href="_sources/Himpunan.md" target="_blank"
+      <li><a href="_sources/Teorema Bayes.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -356,7 +355,7 @@
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1><no title></h1>
+    <h1>Teorema Bayes</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -365,9 +364,10 @@
                 <h2> Contents </h2>
             </div>
             <nav aria-label="Page">
-                <ul class="simple visible nav section-nav flex-column">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contohnya">Contohnya:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#jawaban">Jawaban:</a></li>
 </ul>
-
             </nav>
         </div>
     </div>
@@ -378,52 +378,101 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <ol class="arabic simple">
-<li><p><span class="math notranslate nohighlight">\(\overline{A \cap B}=\bar{A} \cup \bar{B}\)</span>  <br />
-<span class="math notranslate nohighlight">\(\overline{A \cup B}=\bar{A} \cap \bar{B}\)</span></p></li>
-<li><p><span class="math notranslate nohighlight">\(A \cup(A \cap B)=A\)</span>  <br />
-<span class="math notranslate nohighlight">\(A\cap(A \cup B)=A\)</span></p></li>
-<li><p><span class="math notranslate nohighlight">\(A \cup \bar{A}=U\)</span>
-<span class="math notranslate nohighlight">\(A \cap \bar{A}=\emptyset\)</span></p></li>
-</ol>
-<p>Gambar tersebut termasuk pada hukum dasar dalam aljabar himpunan.
-Pada nomor 1 itu adalah Hukum De Morgan (De Morgan’s Laws), hukum ini menyatakan bahwa komplemen dari irisan adalah sama dengan gabungan komplemen, dan komplemen dari gabungan adalah sama dengan irisan komplemen.
-Pada nomor yang ke-2 adalah Hukum Absorpsi (Absorption Laws), hukum ini menunjukkan bahwa himpunan A dapat menyerap bagian dari operasi himpunan yang mengikutinya.
-Pada nomor yang ke-3 adalah Hukum Komplemen(Complement Laws), hukum ini menyatakan bahwa gabungan sebuah himpunan dengan komplemennya adalah himpunan semesta, sedangkan irisan sebuah himpunan dengan komplemennya adalah himpunan kosong.
-Berikut adalah contoh untuk pembuktuian dari rumus diatas:</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="teorema-bayes">
+<h1>Teorema Bayes<a class="headerlink" href="#teorema-bayes" title="Link to this heading">#</a></h1>
+<p>Teorema Bayes merupakan suatu konsep dalam probabilitas yang memperhitungkan bagaimana probabilitas suatu peristiwa dapat dipengaruhi oleh peristiwa lainnya. Teorema Bayes digunakan untuk mengestimasi atau menghitung parameter dalam suatu distribusi probabilitas. Teorema Bayes ini menyatakan bahwa peristiwa di masa depan atau yang belum terjadi dapat diprediksi dengan mempertimbangkan peristiwa sebelumnya yang telah terjadi. Teorema Bayesian merupakan dasar dari ditemukannya Metode Bayesian.</p>
+<section id="contohnya">
+<h2>Contohnya:<a class="headerlink" href="#contohnya" title="Link to this heading">#</a></h2>
+<p>Bagaimana kemungkinan/probabilitas usia paruh baya tekanan darah sangat tinggi kemungkinan penyakit Hipertensi (H) atau Tidak (T)</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>No</p></th>
+<th class="head"><p>Usia</p></th>
+<th class="head"><p>Tekanan Darah</p></th>
+<th class="head"><p>Penyakit(H/T)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1.</p></td>
+<td><p>Muda</p></td>
+<td><p>Normal</p></td>
+<td><p>T</p></td>
+</tr>
+<tr class="row-odd"><td><p>2.</p></td>
+<td><p>Muda</p></td>
+<td><p>Tinggi</p></td>
+<td><p>T</p></td>
+</tr>
+<tr class="row-even"><td><p>3.</p></td>
+<td><p>Paruh baya</p></td>
+<td><p>Normal</p></td>
+<td><p>T</p></td>
+</tr>
+<tr class="row-odd"><td><p>4.</p></td>
+<td><p>Paruh baya</p></td>
+<td><p>Tinggi</p></td>
+<td><p>H</p></td>
+</tr>
+<tr class="row-even"><td><p>5.</p></td>
+<td><p>Tua</p></td>
+<td><p>Normal</p></td>
+<td><p>H</p></td>
+</tr>
+<tr class="row-odd"><td><p>6.</p></td>
+<td><p>Tua</p></td>
+<td><p>Sangat Tinggi</p></td>
+<td><p>H</p></td>
+</tr>
+<tr class="row-even"><td><p>7.</p></td>
+<td><p>Muda</p></td>
+<td><p>Normal</p></td>
+<td><p>T</p></td>
+</tr>
+<tr class="row-odd"><td><p>8.</p></td>
+<td><p>Tua</p></td>
+<td><p>Tinggi</p></td>
+<td><p>H</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Dari tabel di atas tentukan:</p>
 <ol class="arabic simple">
-<li><p>Hukum De Morgan
-<span class="math notranslate nohighlight">\(\overline{A \cap B}=\bar{A} \cup \bar{B}\)</span></p></li>
+<li><p>Hitunglah probabilitas Hipertensi terhadap usia paruh baya tekanan darah sangat tinggi</p></li>
+<li><p>Hitunglah probabilitas Tidak Hipertensi terhadap usia paruh baya tekanan darah sangat tinggi</p></li>
 </ol>
+<p>Sehingga menggunakan <strong>Teorema Bayes</strong>:
+Teorema Bayes Yaitu hubungan antara prior, likelihood, dan posterior dinyatakan dalam Teorema Bayes. Secara matematis, teorema Bayes dapat ditulis sebagai berikut:</p>
+<p><span class="math notranslate nohighlight">\(P( H| X) = \frac{P(X|H) \cdot P(H)}{P(X)}\)</span></p>
 <ul class="simple">
-<li><p>Misalkan A = 1,2,3 dan B = 3,4,5.</p></li>
-<li><p>Maka <span class="math notranslate nohighlight">\({A \cap B}\)</span>  = 3, dan komplemen dari <span class="math notranslate nohighlight">\({A \cap B}\)</span> dalam semesta <em>U</em> = 1,2,3,4,5 adalah <span class="math notranslate nohighlight">\(\overline{A \cap B}= 1,2,4,5\)</span></p></li>
-<li><p>Komplemen <em>A</em> adalah  <span class="math notranslate nohighlight">\(\bar{A}\)</span> = 4,5 dan komplemen <em>B</em> adalah <span class="math notranslate nohighlight">\(\bar{B}\)</span> = 1,2.</p></li>
-<li><p>Gabungan <span class="math notranslate nohighlight">\(\bar{A} \cup \bar{B}\)</span> = 1,2,4,5</p></li>
-<li><p>Jadi, <span class="math notranslate nohighlight">\(\overline{A \cap B}=\bar{A} \cup \bar{B}\)</span> .</p></li>
+<li><p><span class="math notranslate nohighlight">\(P(H | X)\)</span> adalah posterior probabilitas dari parameter <span class="math notranslate nohighlight">\(H\)</span> setelah melihat data <span class="math notranslate nohighlight">\(X\)</span>.</p></li>
+<li><p><span class="math notranslate nohighlight">\(P(X | H)\)</span> adalah likelihood dari data <span class="math notranslate nohighlight">\(X\)</span> dengan parameter <span class="math notranslate nohighlight">\(H\)</span>.</p></li>
+<li><p><span class="math notranslate nohighlight">\(P(H)\)</span> adalah prior probabilitas dari parameter <span class="math notranslate nohighlight">\(H\)</span>.</p></li>
 </ul>
-<ol class="arabic simple" start="2">
-<li><p>Hukum Absorpsi
-<span class="math notranslate nohighlight">\({A} \cup\)</span> (<span class="math notranslate nohighlight">\({A \cap B}\)</span>)=<em>A</em></p></li>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(P(X)\)</span> adalah probabilitas dari data <span class="math notranslate nohighlight">\(X\)</span>.</p></li>
+</ul>
+<ul class="simple">
+<li><p><strong>Prior</strong>
+Prior adalah pengetahuan awal tentang parameter yang tidak diketahui dihubungkan dengan informasi yang diperoleh dari pengamatan sebelumnya.</p></li>
+<li><p><strong>Likelihood</strong>
+Likelihood adalah distribusi probabilitas dari data yang diberikan parameter. Likelihood memberikan informasi tentang sejauh mana parameter dapat menjelaskan data yang diamati.</p></li>
+<li><p><strong>Posterior</strong>
+Posterior Merupakan distribusi probabilitas yang diperbarui setelah menggabungkan informasi dari prior dan likelihood. Posterior probability menggambarkan keyakinan kita tentang parameter setelah memperhitungkan data yang diamati.</p></li>
+</ul>
+</section>
+<section id="jawaban">
+<h2>Jawaban:<a class="headerlink" href="#jawaban" title="Link to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p><span class="math notranslate nohighlight">\(P(H | X)\)</span> = <span class="math notranslate nohighlight">\(P(X_1| H)\)</span> <strong>.</strong> <span class="math notranslate nohighlight">\(P(X_2 | H)\)</span> <strong>.</strong> <span class="math notranslate nohighlight">\(P(H)\)</span>
+= <span class="math notranslate nohighlight">\(P(\frac{1}{4})\)</span> <strong>.</strong> <span class="math notranslate nohighlight">\(P(\frac{1}{4})\)</span> <strong>.</strong> <span class="math notranslate nohighlight">\(P(\frac{4}{8})\)</span>
+= <span class="math notranslate nohighlight">\(0.03125\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(P(T | X)\)</span> = <span class="math notranslate nohighlight">\(P(X_1| T)\)</span> <strong>.</strong> <span class="math notranslate nohighlight">\(P(X_2 | T)\)</span> <strong>.</strong> <span class="math notranslate nohighlight">\(P(T)\)</span>
+= <span class="math notranslate nohighlight">\(P(\frac{1}{4})\)</span> <strong>.</strong> <span class="math notranslate nohighlight">\((0)\)</span> <strong>.</strong> <span class="math notranslate nohighlight">\(P(\frac{4}{8})\)</span>
+= <span class="math notranslate nohighlight">\(0\)</span></p></li>
 </ol>
-<ul class="simple">
-<li><p>Misalkan <em>A</em> = 1,2,3 dan <em>B</em> = 2,3,4</p></li>
-<li><p>Maka <span class="math notranslate nohighlight">\({A \cap B}\)</span> = 2,3</p></li>
-<li><p>Gabungan <span class="math notranslate nohighlight">\({A} \cup\)</span> (<span class="math notranslate nohighlight">\({A \cap B}\)</span>) = 1,2,3</p></li>
-<li><p>Karena <em>A</em> = 1,2,3, maka benar bahwa <span class="math notranslate nohighlight">\({A} \cup\)</span> (<span class="math notranslate nohighlight">\({A \cap B}\)</span>)=<em>A</em></p></li>
-</ul>
-<ol class="arabic simple" start="3">
-<li><p>Komplemen dan Semesta
-<span class="math notranslate nohighlight">\({A} \cup \bar{A}\)</span> = <em>U</em></p></li>
-</ol>
-<ul class="simple">
-<li><p>Misalkan <em>A</em> = 1,2,3 dan semesta <em>U</em> = 1,2,3,4,5</p></li>
-<li><p>Maka komplemen <em>A</em> adalah <span class="math notranslate nohighlight">\(\bar{A}\)</span> = 4,5</p></li>
-<li><p>Gabungan <span class="math notranslate nohighlight">\({A} \cup \bar{A}\)</span> = 1,2,3,4,5, yang merupakan semesta <em>U</em>
-<span class="math notranslate nohighlight">\(\bar{A} \cup \bar{A}\)</span> = 0</p></li>
-<li><p>Misalkan <em>A</em> = 1,2,3 dan komplemen <em>A</em> = 4,4</p></li>
-<li><p>Maka <span class="math notranslate nohighlight">\(\bar{A} \cup \bar{A}\)</span> = 0, karena tidak ada elemen yang sama di <em>A</em> dan <span class="math notranslate nohighlight">\(\bar{A}\)</span> .</p></li>
-</ul>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -456,22 +505,13 @@ Berikut adalah contoh untuk pembuktuian dari rumus diatas:</p>
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="intro.html"
+       href="Deret%20dan%20Rekursi.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Welcome Kamaliyyatul Bararah note’s</p>
+        <p class="prev-next-title">Deretan</p>
       </div>
-    </a>
-    <a class="right-next"
-       href="Logika%20dan%20Pembuktian.html"
-       title="next page">
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Logika Matematika</p>
-      </div>
-      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div>
                 </footer>
@@ -489,9 +529,10 @@ Berikut adalah contoh untuk pembuktuian dari rumus diatas:</p>
     <i class="fa-solid fa-list"></i> Contents
   </div>
   <nav class="bd-toc-nav page-toc">
-    <ul class="simple visible nav section-nav flex-column">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contohnya">Contohnya:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#jawaban">Jawaban:</a></li>
 </ul>
-
   </nav></div>
 
 </div></div>
