@@ -2,8 +2,9 @@
 title: UAS
 
 ---
+# UAS 
 
-### No 1. Tentukan $(P\implies Q)$ & $(R\implies S)$
+## No 1. Tentukan $(P\implies Q)$ & $(R\implies S)$
 ||No| P| Q | R|S |$P\implies Q$  |$R\implies S$|Hasilnya|
 |--|--|---|--|--|--|--|--|--|
 |1| True | True | False | False|T| T | T|
@@ -16,7 +17,7 @@ title: UAS
 |8| True | True | False | False |T| T |T|
 
 
-### No 2. 
+## No 2. 
 1. Hitung Closeness Centrality :  G
 2. Hitung Betweness Centrality :  F
  
