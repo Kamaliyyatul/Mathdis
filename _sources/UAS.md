@@ -5,7 +5,7 @@ title: UAS
 
 # UAS
 
-### No 1. Tentukan $(P\implies Q)$ $\implies$ $(R\implies S)$
+## No 1. Tentukan $(P\implies Q)$ $\implies$ $(R\implies S)$
 |No|P| Q| R | S|$P\implies Q$  | $R\implies S$|Hasilnya|
 |--|--|---|--|--|--|--|--|
 |1| True | True | False | False|T| T | T|
@@ -18,7 +18,7 @@ title: UAS
 |8| True | True | False | False |T| T |T|
 
 
-### No 2. 
+## No 2. 
 1. Hitung Closeness Centrality :  G
 2. Hitung Betweness Centrality :  F
  
@@ -28,21 +28,33 @@ title: UAS
 - $$C_C\left(v_i\right)=\left[\frac{1}{n-1} \sum_{j \neq i}^n g\left(v_i, v_j\right)\right]^{-1}=\frac{n-1}{\sum_{j \neq i}^n g\left(v_i, v_j\right)}$$
 
 G - A = 6
+
 G - B = 5
+
 G - C = 4
+
 G - D = 3
+
 G - E = 2
+
 G - F = 1
+
 Total = 21
  
-- $Cc(G)=\frac{n-1}{\sum_{j \neq i}^n g\left(v_i, v_j\right)} =\frac{7-1}{\sum_{j \neq i}^n g\left(v_i, v_j\right)}= \frac{6}{21}$ = $0,2857$
+$Cc(G)=\frac{n-1}{\sum_{j \neq i}^n g\left(v_i, v_j\right)} =\frac{7-1}{\sum_{j \neq i}^n g\left(v_i, v_j\right)}= \frac{6}{21}$ = $0,2857$
 
 ### Jawaban no 2:
+
 Pasangan Node yang melewati F :
+
 Pasangan (A,G) = A, B, C, D, E, F, G
+
 Pasangan (B,G) =  B, C, D, E, F, G
+
 Pasangan (C,G) = C, D, E, F, G
+
 Pasangan (D,G) = D, E, F, G
+
 Pasangan (E,G) = E, F, G
 
 Total ada 5 pasangan yang melewati Node F

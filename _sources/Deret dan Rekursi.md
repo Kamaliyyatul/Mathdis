@@ -3,6 +3,8 @@ title: Deret dan Rekursi
 
 ---
 
+# Deretan dan Rekursi
+
 ## Deretan
 - Deretan adalah suatu urutan atau susunan elemen atau objek yang disusun secara teratur berdasarkan suatu aturan tertentu. Elemen dalam deretan biasanya berupa angka, huruf, simbol, atau objek lainnya, dan urutannya dapat didasarkan pada pola, nilai, atau hubungan tertentu.
 
@@ -63,7 +65,7 @@ Contoh: 0, 1, 1, 2, 3, 5, 8, ...
 Panjang string S adalah jumlah karakter di dalam string tersebut
 Contoh: *informatika* adalah string dengan panjang 11 karakter 10100101 adalah string biner dengan panjang 8 bit.
 - String kosong dilambangkan dengan $\lambda$, panjangnya = 0
-## Penjumlahan deretan
+### Penjumlahan deretan
 jumlah deretan
     $a_m, a_{m+1}, a_{m+2}, \dots, a_n$
 adalah
@@ -92,7 +94,7 @@ $\sum_{k=1}^{100}k^2$ = $\sum_{k=1}^{49}k^2$ + $\sum_{k=50}^{100}k^2$
 |$\sum_{k=0}^\infty x^k, \quad \lvert x \rvert < 1$| $\frac{1}{1-x}$
 |$\sum_{k=1}^\infty kx^{k-1}, \quad \lvert x \rvert < 1$|$\frac{1}{(1-x)^2}$|      |
 
-## Sumasi ganda
+### Sumasi ganda
 Di dalam algoritma, kita perlu menghitung berapa kali suatu operasi tertentu dilakukan di dalam sebuah kalang bersarang (nested loop). Penjumlahan semua operasi di dalam kalang bersarang dinyatakan dalam bentuk sumasi ganda.
 Contoh: $\sum_{i=1}^{4}$ $\sum_{j=1}^{3}ij$ 
 Untuk menghitung sumasi ganda, mula-mula ekspansi sumasi terdalam, lalu dilanjutkan sumasi terluar:
@@ -170,7 +172,7 @@ else
    return n * *Faktorial* (n - 1) *{rekurens}*
 end
 
-## Struktur Rekursif
+### Struktur Rekursif
 Struktur data yang penting dalam komputer adalah pohon biner (*binary tree*)
 ![Screenshot (68)](https://hackmd.io/_uploads/Sk2laNgXyx.png)
 

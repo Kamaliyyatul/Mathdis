@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Deretan &#8212; Materi Mathdiskrit</title>
+    <title>Deretan dan Rekursi &#8212; Materi Mathdiskrit</title>
   
   
   
@@ -66,7 +66,7 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Teorema Bayes" href="Teorema%20Bayes.html" />
-    <link rel="prev" title="&lt;no title&gt;" href="Analisa%20Graph.html" />
+    <link rel="prev" title="Social Network Analysis" href="Analisa%20Graph.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -171,14 +171,14 @@
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Himpunan.html">Himpunan</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Logika%20dan%20Pembuktian.html">Logika Matematika</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Aljabar%20Boolean%20dan%20Gerbang%20Logika.html">Aljabar Boolean dan Gerbang Logika</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Algoritma.html">Algoritma</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Deretan</a></li>
-
-
-
-
+<li class="toctree-l1"><a class="reference internal" href="Analisa%20Graph.html">Social Network Analysis</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Deretan dan Rekursi</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Teorema%20Bayes.html">Teorema Bayes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="UAS.html">UAS</a></li>
 </ul>
 
     </div>
@@ -356,7 +356,7 @@
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Deretan</h1>
+    <h1>Deretan dan Rekursi</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -366,23 +366,22 @@
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Deretan</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#deret-aritmatika">- Deret Aritmatika</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#deret-geometri">- Deret Geometri</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#deret-bilangan-kuadrat">- Deret Bilangan Kuadrat</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#deret-bilangan-kubik">- Deret Bilangan Kubik</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#deret-fibonacci">- Deret Fibonacci</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#deretan">Deretan</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#deret-aritmatika">- Deret Aritmatika</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#deret-geometri">- Deret Geometri</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#deret-bilangan-kuadrat">- Deret Bilangan Kuadrat</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#deret-bilangan-kubik">- Deret Bilangan Kubik</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#deret-fibonacci">- Deret Fibonacci</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#penjumlahan-deretan">Penjumlahan deretan</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sumasi-ganda">Sumasi ganda</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#penjumlahan-deretan">Penjumlahan deretan</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#sumasi-ganda">Sumasi ganda</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#rekursi">Rekursi</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fungsi-rekursif">Fungsi Rekursif</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rekursi">Rekursi</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fungsi-rekursif">Fungsi Rekursif</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#struktur-rekursif">Struktur Rekursif</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#struktur-rekursif">Struktur Rekursif</a></li>
 </ul>
-
             </nav>
         </div>
     </div>
@@ -393,8 +392,10 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="deretan">
-<h1>Deretan<a class="headerlink" href="#deretan" title="Link to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="deretan-dan-rekursi">
+<h1>Deretan dan Rekursi<a class="headerlink" href="#deretan-dan-rekursi" title="Link to this heading">#</a></h1>
+<section id="deretan">
+<h2>Deretan<a class="headerlink" href="#deretan" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p>Deretan adalah suatu urutan atau susunan elemen atau objek yang disusun secara teratur berdasarkan suatu aturan tertentu. Elemen dalam deretan biasanya berupa angka, huruf, simbol, atau objek lainnya, dan urutannya dapat didasarkan pada pola, nilai, atau hubungan tertentu.</p></li>
 <li><p>Definisi: Sebuah deretan adalah fungsi dari subset suatu himpunan bilangan bulat (biasanya N atau P) ke sebuah himpunan S.
@@ -417,7 +418,7 @@ Notasi deretan: <span class="math notranslate nohighlight">\(\{a_n\}\)</span></p
 <li></li>
 </ul>
 <section id="deret-aritmatika">
-<h2>- Deret Aritmatika<a class="headerlink" href="#deret-aritmatika" title="Link to this heading">#</a></h2>
+<h3>- Deret Aritmatika<a class="headerlink" href="#deret-aritmatika" title="Link to this heading">#</a></h3>
 <p>Deret dengan pola kenaikan atau penurunan tetap.
 Contoh: 2, 5, 8, 11, 14, …
 <strong>Rumus suku ke-n</strong>:
@@ -428,7 +429,7 @@ Di mana:
 <span class="math notranslate nohighlight">\(n\)</span> : nomor suku yang dicari</p>
 </section>
 <section id="deret-geometri">
-<h2>- Deret Geometri<a class="headerlink" href="#deret-geometri" title="Link to this heading">#</a></h2>
+<h3>- Deret Geometri<a class="headerlink" href="#deret-geometri" title="Link to this heading">#</a></h3>
 <p>Deret dengan pola kelipatan tetap.
 Contoh: 3, 6, 12, 24, 48, …
 <strong>Rumus suku ke-n</strong>:
@@ -439,21 +440,21 @@ Di mana:
 <span class="math notranslate nohighlight">\(n\)</span> = nomor suku yang dicari</p>
 </section>
 <section id="deret-bilangan-kuadrat">
-<h2>- Deret Bilangan Kuadrat<a class="headerlink" href="#deret-bilangan-kuadrat" title="Link to this heading">#</a></h2>
+<h3>- Deret Bilangan Kuadrat<a class="headerlink" href="#deret-bilangan-kuadrat" title="Link to this heading">#</a></h3>
 <p>Deret dengan pola nilai berupa kuadrat bilangan bulat.
 Contoh: 1, 4, 9, 16, 25, …
 <strong>Rumus suku ke-n:</strong>
 <span class="math notranslate nohighlight">\(U_n = n^{2}\)</span></p>
 </section>
 <section id="deret-bilangan-kubik">
-<h2>- Deret Bilangan Kubik<a class="headerlink" href="#deret-bilangan-kubik" title="Link to this heading">#</a></h2>
+<h3>- Deret Bilangan Kubik<a class="headerlink" href="#deret-bilangan-kubik" title="Link to this heading">#</a></h3>
 <p>Deret dengan pola nilai berupa kubik bilangan bulat.
 Contoh: 1, 8, 27, 64, 125, …
 <strong>Contoh suku ke-n:</strong>
 <span class="math notranslate nohighlight">\(U_n = n^{3}\)</span></p>
 </section>
 <section id="deret-fibonacci">
-<h2>- Deret Fibonacci<a class="headerlink" href="#deret-fibonacci" title="Link to this heading">#</a></h2>
+<h3>- Deret Fibonacci<a class="headerlink" href="#deret-fibonacci" title="Link to this heading">#</a></h3>
 <p>Deret dengan pola di mana setiap suku merupakan jumlah dua suku sebelumnya.
 Contoh: 0, 1, 1, 2, 3, 5, 8, …
 <strong>Rumus suku ke-n</strong>(rekrusif):
@@ -465,9 +466,8 @@ Contoh: <em>informatika</em> adalah string dengan panjang 11 karakter 10100101 a
 <li><p>String kosong dilambangkan dengan <span class="math notranslate nohighlight">\(\lambda\)</span>, panjangnya = 0</p></li>
 </ul>
 </section>
-</section>
 <section id="penjumlahan-deretan">
-<h1>Penjumlahan deretan<a class="headerlink" href="#penjumlahan-deretan" title="Link to this heading">#</a></h1>
+<h3>Penjumlahan deretan<a class="headerlink" href="#penjumlahan-deretan" title="Link to this heading">#</a></h3>
 <p>jumlah deretan
 <span class="math notranslate nohighlight">\(a_m, a_{m+1}, a_{m+2}, \dots, a_n\)</span>
 adalah
@@ -512,7 +512,7 @@ Jawaban:
 </div>
 </section>
 <section id="sumasi-ganda">
-<h1>Sumasi ganda<a class="headerlink" href="#sumasi-ganda" title="Link to this heading">#</a></h1>
+<h3>Sumasi ganda<a class="headerlink" href="#sumasi-ganda" title="Link to this heading">#</a></h3>
 <p>Di dalam algoritma, kita perlu menghitung berapa kali suatu operasi tertentu dilakukan di dalam sebuah kalang bersarang (nested loop). Penjumlahan semua operasi di dalam kalang bersarang dinyatakan dalam bentuk sumasi ganda.
 Contoh: <span class="math notranslate nohighlight">\(\sum_{i=1}^{4}\)</span> <span class="math notranslate nohighlight">\(\sum_{j=1}^{3}ij\)</span>
 Untuk menghitung sumasi ganda, mula-mula ekspansi sumasi terdalam, lalu dilanjutkan sumasi terluar:
@@ -532,14 +532,15 @@ t = <span class="math notranslate nohighlight">\(\sum_{j=1}^{10}\)</span> <span 
 = <span class="math notranslate nohighlight">\(\sum_{j=1}^{10}j\)</span>
 = <span class="math notranslate nohighlight">\(\frac{10(10+1)}{2}\)</span> = 55</p>
 </section>
+</section>
 <section id="rekursi">
-<h1>Rekursi<a class="headerlink" href="#rekursi" title="Link to this heading">#</a></h1>
+<h2>Rekursi<a class="headerlink" href="#rekursi" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p>Sebuah objek dikatakan <strong>rekursif</strong> (<em>recursive</em>) jika ia didefinisikan dalam terminologi dirinya sendiri.</p></li>
 <li><p>Proses mendifinisikan objek dalam terminologi dirinya sendiri disebut <strong>rekusri</strong> (<em>recursion</em>).</p></li>
 </ul>
 <section id="fungsi-rekursif">
-<h2>Fungsi Rekursif<a class="headerlink" href="#fungsi-rekursif" title="Link to this heading">#</a></h2>
+<h3>Fungsi Rekursif<a class="headerlink" href="#fungsi-rekursif" title="Link to this heading">#</a></h3>
 <p>Fungsi rekursif didefinisikan oleh dua bagian:
 (1). Basis</p>
 <ul class="simple">
@@ -589,9 +590,8 @@ else
 return n * <em>Faktorial</em> (n - 1) <em>{rekurens}</em>
 end</p>
 </section>
-</section>
 <section id="struktur-rekursif">
-<h1>Struktur Rekursif<a class="headerlink" href="#struktur-rekursif" title="Link to this heading">#</a></h1>
+<h3>Struktur Rekursif<a class="headerlink" href="#struktur-rekursif" title="Link to this heading">#</a></h3>
 <p>Struktur data yang penting dalam komputer adalah pohon biner (<em>binary tree</em>)
 <img alt="Screenshot (68)" src="https://hackmd.io/_uploads/Sk2laNgXyx.png" /></p>
 <ul class="simple">
@@ -605,6 +605,8 @@ end</p>
 (a). Basis: kosong adalah pohon biner
 (b). Rekurens: jika <span class="math notranslate nohighlight">\(T_1\)</span> DAN <span class="math notranslate nohighlight">\(T_2\)</span> adalah pohon biner, maka <strong>.</strong> adalah pohon biner.</p></li>
 </ul>
+</section>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -643,7 +645,7 @@ end</p>
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">&lt;no title&gt;</p>
+        <p class="prev-next-title">Social Network Analysis</p>
       </div>
     </a>
     <a class="right-next"
@@ -672,23 +674,22 @@ end</p>
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Deretan</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#deret-aritmatika">- Deret Aritmatika</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#deret-geometri">- Deret Geometri</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#deret-bilangan-kuadrat">- Deret Bilangan Kuadrat</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#deret-bilangan-kubik">- Deret Bilangan Kubik</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#deret-fibonacci">- Deret Fibonacci</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#deretan">Deretan</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#deret-aritmatika">- Deret Aritmatika</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#deret-geometri">- Deret Geometri</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#deret-bilangan-kuadrat">- Deret Bilangan Kuadrat</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#deret-bilangan-kubik">- Deret Bilangan Kubik</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#deret-fibonacci">- Deret Fibonacci</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#penjumlahan-deretan">Penjumlahan deretan</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sumasi-ganda">Sumasi ganda</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#penjumlahan-deretan">Penjumlahan deretan</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#sumasi-ganda">Sumasi ganda</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#rekursi">Rekursi</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fungsi-rekursif">Fungsi Rekursif</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rekursi">Rekursi</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fungsi-rekursif">Fungsi Rekursif</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#struktur-rekursif">Struktur Rekursif</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#struktur-rekursif">Struktur Rekursif</a></li>
 </ul>
-
   </nav></div>
 
 </div></div>

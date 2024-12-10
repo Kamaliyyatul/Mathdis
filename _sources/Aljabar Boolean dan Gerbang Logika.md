@@ -3,18 +3,27 @@ title: Aljabar Boolean dan Gerbang Logika
 
 ---
 
- **Aljabar Boolean dan Gerbang Logika**
+ # Aljabar Boolean dan Gerbang Logika
+
 Aljabar boolean adalah struktur aljabar yang menghubunngkan dengan variabel-variabel biner yang hanya meiliki dua nilai, yaitu benar (1) dan salah (0), dan dioperasikan dengan operasi logika seperti and, or, dan not.
-**Gerbang Logika**
+
+## Gerbang Logika
+
 Gerbang logika adalah memasukkan input yang diproses dan hasilnya dalam tabel kebenaran.
-**Operator Biner**
+
+### Operator Biner
+
 Operator biner adalah jenis bilangan yang hanya bisa terdiri dari dua jenis angka yitu 0 dan 1. Aljabar boolean memiliki dua operator biner:
 1.Penjumlahan(+): Digunakan untuk operasi disjungsi (OR).
 2.Perkalian(.): Digunakan untuk operasi konjungsi (AND)
-**Operator Uner**
+
+### Operator Uner
+
 Operator uner adalah operasi yang hanya melibatkan satu operand, yaitu satu input.
 1.Komplemen ('): Digunakan untuk menghasilkan nilai yang berlawanan dari suatu elemen. Misalnya, jika a=1, maka a=0, dan sebaliknya.
-**Aksioma**
+
+### Aksioma
+
 Aksioma adalah pernyataan yang diterima sebagai kebenaran dasar tanpa perlu pembuktian dalam suatu sistem logika atau matematika.
 Untuk setiap a, b, c ∈ B, berlaku aksioma-aksioma berikut:
 * Closure: a + b ∈ B dan a ⋅ b ∈ B.
@@ -41,7 +50,8 @@ A OR Y
 | 1 | 0 | 1   |
 | 1 | 1 | 1   |
 
-**Boolean Algebra**
+### Boolean Algebra
+
 Boolean algebra adalah aljabar dimana nilai variabel merupakan nilai kebenaran, benar dan salah, yang biasanya dilambangkan dengan 1 dan 0.
 
 NOT X
@@ -96,9 +106,11 @@ Tabel kebenaran untuk untuk fungsi Boolean:
 | Double Complement Law | $$\overline(\overline x)=x$$ |
  
 * Terkadang, lebih ekonomis membangun sirkuit dengan menggunakan komplemen fungsi dan mengkomplementasi hasilnya dibandingkan mengimplementasikan fungsi secara langsung. Hukum DeMorgan memudahkan penemuan komplemen dari fungsi Boolean, yang menyatakan: 
+
 $$\overline{(xy)}= \overline{x}+ \overline{y} \quad \text{and} \quad \overline{(x+y)}= \overline{x} \overline{y}$$ 
 
-**Logic Gates**
+### Logic Gates
+
 * Fungsi Boolean diimplementasikan dalam sirkuit komputer digital yang disebut gerbang (gates).  
 * Gerbang adalah perangkat elektronik yang menghasilkan hasil berdasarkan dua atau lebih nilai input.  
 * Dalam kenyataannya, gerbang terdiri dari satu hingga enam transistor, tetapi desainer digital menganggapnya sebagai satu kesatuan.  
@@ -137,11 +149,14 @@ X NOR Y
 **Komponen Digital**
 * Hal utama yang perlu diingat adalah bahwa kombinasi gerbang menerapkan fungsi Boolean.
 * Rangkaian di bawah ini mengimplementasikan fungsi Boolean :
+
 $F(X,Y,Z) = X+ \overline{Y}Z$
 
 **Combinational Circuits(Sirkuit Kombinasi)**
 * Kami telah merancang rangkaian yang mengimplementasikan fungsi Boolean :
+
 $F(X,Y,Z) = X+ \overline{Y}Z$
+
 * Rangkaian ini merupakan contoh rangkaian logika kombinasional.
 * Rangkaian logika kombinasional menghasilkan output tertentu.
 * Rangkaian logika kombinasional memberi kita banyak perangkat yang berguna.

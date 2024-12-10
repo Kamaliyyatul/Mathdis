@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>&lt;no title&gt; &#8212; Materi Mathdiskrit</title>
+    <title>Himpunan &#8212; Materi Mathdiskrit</title>
   
   
   
@@ -170,15 +170,15 @@
                 </a>
             </li>
         </ul>
-        <ul class="nav bd-sidenav">
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Himpunan</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Logika%20dan%20Pembuktian.html">Logika Matematika</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Aljabar%20Boolean%20dan%20Gerbang%20Logika.html">Aljabar Boolean dan Gerbang Logika</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Algoritma.html">Algoritma</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Deret%20dan%20Rekursi.html">Deretan</a></li>
-
-
-
-
+<li class="toctree-l1"><a class="reference internal" href="Analisa%20Graph.html">Social Network Analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Deret%20dan%20Rekursi.html">Deretan dan Rekursi</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Teorema%20Bayes.html">Teorema Bayes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="UAS.html">UAS</a></li>
 </ul>
 
     </div>
@@ -356,7 +356,7 @@
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1><no title></h1>
+    <h1>Himpunan</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -365,9 +365,11 @@
                 <h2> Contents </h2>
             </div>
             <nav aria-label="Page">
-                <ul class="simple visible nav section-nav flex-column">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hukum-de-morgan">Hukum De Morgan</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hukum-absorpsi">Hukum Absorpsi</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#komplemen-dan-semesta">Komplemen dan Semesta</a></li>
 </ul>
-
             </nav>
         </div>
     </div>
@@ -378,7 +380,9 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <ol class="arabic simple">
+  <section class="tex2jax_ignore mathjax_ignore" id="himpunan">
+<h1>Himpunan<a class="headerlink" href="#himpunan" title="Link to this heading">#</a></h1>
+<ol class="arabic simple">
 <li><p><span class="math notranslate nohighlight">\(\overline{A \cap B}=\bar{A} \cup \bar{B}\)</span>  <br />
 <span class="math notranslate nohighlight">\(\overline{A \cup B}=\bar{A} \cap \bar{B}\)</span></p></li>
 <li><p><span class="math notranslate nohighlight">\(A \cup(A \cap B)=A\)</span>  <br />
@@ -391,10 +395,9 @@ Pada nomor 1 itu adalah Hukum De Morgan (De Morgan’s Laws), hukum ini menyatak
 Pada nomor yang ke-2 adalah Hukum Absorpsi (Absorption Laws), hukum ini menunjukkan bahwa himpunan A dapat menyerap bagian dari operasi himpunan yang mengikutinya.
 Pada nomor yang ke-3 adalah Hukum Komplemen(Complement Laws), hukum ini menyatakan bahwa gabungan sebuah himpunan dengan komplemennya adalah himpunan semesta, sedangkan irisan sebuah himpunan dengan komplemennya adalah himpunan kosong.
 Berikut adalah contoh untuk pembuktuian dari rumus diatas:</p>
-<ol class="arabic simple">
-<li><p>Hukum De Morgan
-<span class="math notranslate nohighlight">\(\overline{A \cap B}=\bar{A} \cup \bar{B}\)</span></p></li>
-</ol>
+<section id="hukum-de-morgan">
+<h2>Hukum De Morgan<a class="headerlink" href="#hukum-de-morgan" title="Link to this heading">#</a></h2>
+<p><span class="math notranslate nohighlight">\(\overline{A \cap B}=\bar{A} \cup \bar{B}\)</span></p>
 <ul class="simple">
 <li><p>Misalkan A = 1,2,3 dan B = 3,4,5.</p></li>
 <li><p>Maka <span class="math notranslate nohighlight">\({A \cap B}\)</span>  = 3, dan komplemen dari <span class="math notranslate nohighlight">\({A \cap B}\)</span> dalam semesta <em>U</em> = 1,2,3,4,5 adalah <span class="math notranslate nohighlight">\(\overline{A \cap B}= 1,2,4,5\)</span></p></li>
@@ -402,20 +405,20 @@ Berikut adalah contoh untuk pembuktuian dari rumus diatas:</p>
 <li><p>Gabungan <span class="math notranslate nohighlight">\(\bar{A} \cup \bar{B}\)</span> = 1,2,4,5</p></li>
 <li><p>Jadi, <span class="math notranslate nohighlight">\(\overline{A \cap B}=\bar{A} \cup \bar{B}\)</span> .</p></li>
 </ul>
-<ol class="arabic simple" start="2">
-<li><p>Hukum Absorpsi
-<span class="math notranslate nohighlight">\({A} \cup\)</span> (<span class="math notranslate nohighlight">\({A \cap B}\)</span>)=<em>A</em></p></li>
-</ol>
+</section>
+<section id="hukum-absorpsi">
+<h2>Hukum Absorpsi<a class="headerlink" href="#hukum-absorpsi" title="Link to this heading">#</a></h2>
+<p><span class="math notranslate nohighlight">\({A} \cup\)</span> (<span class="math notranslate nohighlight">\({A \cap B}\)</span>)=<em>A</em></p>
 <ul class="simple">
 <li><p>Misalkan <em>A</em> = 1,2,3 dan <em>B</em> = 2,3,4</p></li>
 <li><p>Maka <span class="math notranslate nohighlight">\({A \cap B}\)</span> = 2,3</p></li>
 <li><p>Gabungan <span class="math notranslate nohighlight">\({A} \cup\)</span> (<span class="math notranslate nohighlight">\({A \cap B}\)</span>) = 1,2,3</p></li>
 <li><p>Karena <em>A</em> = 1,2,3, maka benar bahwa <span class="math notranslate nohighlight">\({A} \cup\)</span> (<span class="math notranslate nohighlight">\({A \cap B}\)</span>)=<em>A</em></p></li>
 </ul>
-<ol class="arabic simple" start="3">
-<li><p>Komplemen dan Semesta
-<span class="math notranslate nohighlight">\({A} \cup \bar{A}\)</span> = <em>U</em></p></li>
-</ol>
+</section>
+<section id="komplemen-dan-semesta">
+<h2>Komplemen dan Semesta<a class="headerlink" href="#komplemen-dan-semesta" title="Link to this heading">#</a></h2>
+<p><span class="math notranslate nohighlight">\({A} \cup \bar{A}\)</span> = <em>U</em></p>
 <ul class="simple">
 <li><p>Misalkan <em>A</em> = 1,2,3 dan semesta <em>U</em> = 1,2,3,4,5</p></li>
 <li><p>Maka komplemen <em>A</em> adalah <span class="math notranslate nohighlight">\(\bar{A}\)</span> = 4,5</p></li>
@@ -424,6 +427,8 @@ Berikut adalah contoh untuk pembuktuian dari rumus diatas:</p>
 <li><p>Misalkan <em>A</em> = 1,2,3 dan komplemen <em>A</em> = 4,4</p></li>
 <li><p>Maka <span class="math notranslate nohighlight">\(\bar{A} \cup \bar{A}\)</span> = 0, karena tidak ada elemen yang sama di <em>A</em> dan <span class="math notranslate nohighlight">\(\bar{A}\)</span> .</p></li>
 </ul>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -489,9 +494,11 @@ Berikut adalah contoh untuk pembuktuian dari rumus diatas:</p>
     <i class="fa-solid fa-list"></i> Contents
   </div>
   <nav class="bd-toc-nav page-toc">
-    <ul class="simple visible nav section-nav flex-column">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hukum-de-morgan">Hukum De Morgan</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hukum-absorpsi">Hukum Absorpsi</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#komplemen-dan-semesta">Komplemen dan Semesta</a></li>
 </ul>
-
   </nav></div>
 
 </div></div>

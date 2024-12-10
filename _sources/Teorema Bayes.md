@@ -45,7 +45,7 @@ Likelihood adalah distribusi probabilitas dari data yang diberikan parameter. Li
 - **Posterior**
 Posterior Merupakan distribusi probabilitas yang diperbarui setelah menggabungkan informasi dari prior dan likelihood. Posterior probability menggambarkan keyakinan kita tentang parameter setelah memperhitungkan data yang diamati.
 
-## Jawaban:
+### Jawaban:
 1. $P(H | X)$ = $P(X_1| H)$ **.** $P(X_2 | H)$ **.** $P(H)$
 = $P(\frac{1}{4})$ **.** $P(\frac{1}{4})$ **.** $P(\frac{4}{8})$
 = $0.03125$

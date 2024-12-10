@@ -3,9 +3,10 @@ title: Analisa Graph
 
 ---
 
-* ###  Social Network Analysis
+# Social Network Analysis
 Social Network Analysis (SNA) adalah metode untuk mempelajari  hubungan antara individu, kelompok, atau entitas lain dalam suatu jaringan sosial dengan menggunakan teori graf. Implementasi Social Network Analysis yaitu dapat menjelaskan relasi atau hubungan antara aktor melalui visualisasi berbentuk graf. Relasi dalam analisis jaringan sosial dapat diproses dalam bentuk perhitungan yang disebut centrality. centrality adalah ukuran untuk mengetahui seberapa penting atau berpengaruhnya sebuah node dalam jaringan.
-* ### Social Network 
+
+## Social Network 
 Terdapat node yang mewakili orang atau individu atau aktor. 
 Relasi  antar objek  dapat dinyatakan dengan link atau edges yang terjadi antara aktor tersebut. Social network terdiri dari banyak aktor yang mempunyai relasi satu sama lain hingga membentuk peta jaringan sosial yang dinyatakan dengan graph.
 
@@ -35,24 +36,33 @@ Table 1.1 : Adjacency Matrix
 Degree centrality adalah ukuran sentralitas dalam jaringan yang mengukur seberapa banyak suatu node terhubung dengan node lainnya. 
 pentingnya node ditentukan oleh jumlah node yang berdekatan dengan node tersebut : lebih besar derajatnya (degree) maka lebih penting node itu dalam suatu jaringan dan hanya sebagian kecil node yang memiliki derajat tinggi dalam jaringan.
 * Degree Centrality:
+
 $$C_D\left(v_i\right)=d_i=\sum_i A_{i j}$$
+
 * Normalisasi Degree Centrality:
- $C_D^{\prime}\left(v_i\right)=d_i /(n-1)$
+
+ $$C_D^{\prime}\left(v_i\right)=d_i /(n-1)$$
 
 untuk node 1, degree centrality adalah 3 dan untuk Normalisasi degree centrality adalah 3/(9-1) = 3/8.
 
 * ### Closeness Centrality
 Closeness centrality adalah nilai yang menunjukkan seberapa dekat suatu node dengan node yang lain dalam jaringan dengan menghitung rata-rata dari jarak relasi node-node tersebut. Skor closeness centrality mewakili kecepatan dalam penyebaran informasi.
 * Average Distance: 
+
  $D_{\text {avg }}\left(v_i\right)=\frac{1}{n-1} \sum_{j \neq i}^n g\left(v_i, v_j\right)$
+
 *  Closeness Centrality:
+
 $$C_C\left(v_i\right)=\left[\frac{1}{n-1} \sum_{j \neq i}^n g\left(v_i, v_j\right)\right]^{-1}=\frac{n-1}{\sum_{j \neq i}^n g\left(v_i, v_j\right)}$$
 
+
 * Contoh Closeness Centrality
+
 $$\begin{gathered}
 C_C(3)=\frac{9-1}{1+1+1+2+2+3+3+4}=8 / 17=0.47 \\
 C_C(4)=\frac{9-1}{1+2+1+1+1+2+2+3}=8 / 13=0.62
 \end{gathered}$$
+
 Node 4 lebih central dari node 3
 
 Table 1.2 : Pairwise geodesic distance
@@ -76,9 +86,11 @@ Betweenness centrality adalah ukuran yang menunjukkan seberapa besar kemampuan s
 * Menghitung jumlah lintasan terpendek yang melewati suatu node
 * Node dengan betwenneess tinggi adalah penting dalam komunikasi dan penyebaran informasi
 * Betweenness Centrality
+
 $$
 C_B\left(v_i\right)=\sum_{v_s \neq v_i \neq v_t \in V, s<t} \frac{\sigma_{s t}\left(v_i\right)}{\sigma_{s t}}
 $$
+
 $\sigma_{s t}$ Jumlah lintasan terpendek antara s dan t 
 $\sigma_{s t}\left(v_i\right)$ Jumlah lintasan terpendek antara $s$ dan $t$ yang melewati $\mathrm{v}_{\mathrm{i}}$
 
@@ -94,6 +106,7 @@ $\sigma_{s t}\left(v_i\right)$ Jumlah lintasan terpendek antara $s$ dan $t$ yang
 | *t* = 9 | 2/2 | 4/4 | 2/2 |
 
 Normalisasi Betweenness Centrality :
+
 $$C_B^{\prime}(i)=\frac{C_B(i)}{(n-1)(n-2) / 2} .$$
 
 * ### Eigenvector centrality
